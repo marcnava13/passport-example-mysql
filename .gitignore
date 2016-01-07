@@ -1,0 +1,9 @@
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+node_modules/
+npm-debug.log
+!public/assets/functions.min.js
+!theme.min.css

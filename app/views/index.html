@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="/assets/theme.min.css">
+</head>
+<body>
+    <header class="text-center">
+        <h1>Node Authentication</h1>
+    </header>
+    <div class="container system-message">
+        {% if(message|length > 0) %}
+            <div class="alert alert-danger">{{ message }}</div>
+        {% endif %}
+    </div>
+    <section id="body" class="container">
+        {% block body %}{% endblock %}
+    </section>
+    <footer class="col-sm-12">
+        <div class="container">
+            <a href="www.marcosnavarro.net">www.marcosnavarro.net</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/assets/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/functions.min.js"></script>
+</body>
+</html>

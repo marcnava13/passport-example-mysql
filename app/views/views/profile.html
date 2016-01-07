@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block body %}
+	<div class="page-header text-center">
+		Hello, <strong>{{ user.displayName }}</strong> <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-xs-12">
+			<div class="well">
+				<h3><span class="fa fa-user"></span> Local</h3>
+					<p>
+						<strong>ID</strong>: {{ user.id }}<br>
+						<strong>Email</strong>: {{ user.email }}<br>
+					</p>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}
